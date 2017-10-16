@@ -1,0 +1,29 @@
+div{
+	width:150px;
+	height: 150px;
+	float: left;
+	
+}
+
+#bb1{
+	background-image: url(../img/bb1_480.jpg);
+	background-size: 100%;
+	float: right;
+}
+#bb2{
+	background-image:url(../img/bb2_480.jpg);
+	background-size: 100%;
+	
+}
+#bb3{
+	background-image: url(../img/bb3_480.jpg);
+	background-size: 100%;
+}
+#bb4{
+	background-image: url(../img/bb4_480.jpg);
+	background-size: 100%;
+}
+#bb5{
+	background-image: url(../img/bb5_480.jpg);
+	background-size: 100%;
+}
