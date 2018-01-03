@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+	html { 	
+	}
+	
+	body {		
+		font-family: trebuchet, Arial, Verdana, Helvetica, sans-serif;
+		letter-spacing: 0.015em;
+		word-spacing: 0.050em;
+		font-style:normal;
+		font-weight:normal;
+		font-size: 0.75em;
+		color: #000;
+		border-width: 6px 0 0 0;
+		border-style: solid; 
+		margin: 0;
+		padding: 0;	
+	} 
+
+	h1, h2, h3, h4, h5, h6, p , ul { padding: 0 10px 1em 10px; text-align: center; } 
+	
+	h1, h2, h3, h4, h5, h6 { font-family: Times New Roman, "Times New Roman", serif; padding: 0 0 0.5em 0; }
+	
+	h1 { font-size: 6em;  }
+	h2 { font-size: 2.25em; padding: 0; margin: 0 0 0.5em 0; }
+	h3 { font-size: 1.25em; background-color: #000; color: #fff; padding: 0.2em 0;  }
+	h4 { font-size: 1.125em; border-bottom: 1px solid #000; text-transform: uppercase; margin: 0 0 0.5em 0; }
+	h5 { font-size: 1.06em; }
+	h6 { font-size: 1em; }
+	
+	p { padding: 0.5em; line-height: 1.75em; background: #ccc; }
+	
+	blockquote { font: 1.4em Georgia, Times New Roman, "Times New Roman", serif; font-style: italic; text-align: center; margin: 0 0 1em 0; line-height: 1.75em; }
+	
+	ol, ul { overflow: hidden; font-family: Arial, Helvetica, sans-serif; margin: 0 0 1em 0; padding: 0; }
+	li { line-height: 1.22em; list-style: none; margin: 0 0 0.4em 0; padding: 0; line-height: 1.5em; }
+	li a { display: inline; }
+		
+	form { margin: 0 0 1em 0; padding: 0; background: #000; height: 1%; }
+	fieldset { color: #fff; display: block; text-align: center; height: 1%; padding: 1.5em 0;  }
+	legend { margin: 0.5em 0.5em 1em 0.5em; padding: 5px; background: #fff; }
+	label { margin: 0 0.5em; display: block; }
+	input { border: 1px solid #ccc; }
+	
+	hr { height: 1px; width: 100%; margin: 20px 0 20px 0; border: 0; border-top: 1px dotted #000; display: block; clear: both; }
+	
+	a { color: #0099FF; font-weight: bold; margin: 0; padding: 0; height: 1%; }
+	a:hover { color: #000; }
+	
+	strong { font-weight: bold; }
+	
+	img {  margin: 0; padding: 0; float: left; }	
+	
+	/*Usar si necesitas un contenedor sin paddings laterales*/
+	#contenedor.extendido { width: 960px; background: yellow; padding: 0; border: 1px solid red; border-width: 1px 0; margin-bottom: 20px; }
+	
+	
+	
+	
+	/*ESTILOS ESPECIFICOS - sirven solo para efecto del ejemplo, no son parte de Simple. Borrar*/
+
+	.simple h1 { font-style: italic; letter-spacing: -0.03em; margin: 0; padding: 0; }
+	.simple p { background: #000; color: #999; margin: -0.55em auto 0 auto; padding: 0.1em; width: 8.5em; text-align: center; font-size: 0.875em; font-weight: bold; text-transform: uppercase; }
+		
+	.col4 .caja { background: skyblue; }
+	
+	.cc { margin: 20px 0; display: block; }
+
+	
+
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//ES"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+<head>
+
+	<title>Simple | Grilla CSS - Manual</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	
+	<!--[if IE]>
+  		<link rel="stylesheet" type="text/css" href="css/iehacks.css" />
+	<![endif]-->
+    
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" media="screen">
+    
+</head>
+
+
+    <body>
+        
+        <div id="contenedor" class="manual verGrilla">       
+    
+            <div class="caja cabezal">
+			
+				<p class="boton"><a href="index.html">&laquo; Volver</a></p>
+            
+    			<div class="caja simple">						
+					<a href="index.html"> 
+                	<h1>Manual S&#238;mple</h1></a>
+                	<p>&#126; Grilla CSS &#126;</p>
+                    
+                </div>
+                    
+            </div>
+            
+    
+            <div class="caja cuerpo">	
+            
+                <div class="col3">
+                
+                    <h3>Hojas de estilo de <span class="simple">S&#238;mple</span></h3>
+                    
+                    <ul>
+                
+                        <li>                        
+                        
+                            <p><strong>estilos.css:</strong> Es la que invoca al resto de las hojas de estilo usando la regla @import.</p>
+                        
+                        </li>
+                    
+                        <li>
+                    
+                            <p><strong>grilla.css:</strong> Define todos los elementos que configuran la estructura de <span class="simple">S&#238;mple</span>: contenedor, caja, columnas. Si quieres definir tu propio ancho de contenedor o columnas, cantidad de columnas, separación entre ellas, etc.... ésta es la hoja que debes modificar.</p>
+                        
+                        </li>
+                    
+                        <li>
+                    
+                            <p><strong>reset.css:</strong> Basado en el  reset css de <a href="http://developer.yahoo.com/yui/reset/">Blueprint</a>, con algunas modificaciones personales.</p>
+                        
+                        </li>
+                    
+                        <li>
+                    
+                            <p><strong>visual.css:</strong> En ésta hoja de estilo es la que concentra todo lo relacionado con la parte estética: comportamientos, colores, tamaños, tipografías, etc. Cuando necesitemos vestir gráficamente la estructura, ésta es la hoja de estilo que debemos usar.</p>
+                        
+                        </li>
+                                           
+                    </ul>
+                
+                    <h3>Conceptos clave</h3>
+                    
+                    <ul>
+                    
+                        <li>
+                        
+                            <p><strong>contenedor:</strong> ID. Es el elemento que define el ancho del sitio y contiene todos los otros elementos de <span class="simple">S&#238;mple</span>. Está predefinido a 960px de ancho lo que permite subdividirlo en 4, 8, 12, 16 columnas y tiene un padding de 10px a la izquierda y a la derecha.</p>
+                        
+                      </li>
+                        
+                        <li>
+                        
+                          <p><strong>caja:</strong> Clase. Es el contenedor universal de <span class="simple">S&#238;mple</span> y se aplica en un div. Tiene un ancho relativo y sirve para agrupar o encerrar columnas o cualquier otro elemento o grupo de elementos.</p>
+                        
+                        </li>
+                        
+                        <li>
+                        
+                            <p><strong>columnas:</strong> Clase. El ancho de las secciones se mide en columnas. Se escribe &quot;colX&quot; y van desde &quot;col1 a &quot;col12&quot; y siempre van dentro de un div con el class &quot;caja&quot;.</p>
+                        
+                        </li>
+                        
+                        <li>
+                            
+                          <p><strong>final:</strong> Clase. Cuando tenemos un grupo de columnas (colX) dentro de un div caja, la última columna debe sumar la clase &quot;final&quot; a la clase &quot;colX&quot; para eliminar el margen derecho sobrante.</p>
+                          
+                        </li>
+                    
+                    </ul>
+                    
+                    <h3>Ventajas de usar <span class="simple">S&#238;mple</span></h3>
+                    
+                    <ul>
+                    
+                        <li>
+                        
+                            <p><strong>Economía de código:</strong> No existen divs, contenedores o algún otro elemento html vacíos que se usen sólo para separar secciones y/o ayudar a estructurar la grilla a modo de &quot;clear&quot;. </p>
+                          
+                        </li>
+                        
+                        <li>
+                        
+                            <p><strong>Velocidad:</strong> Menos código, más velocidad. Al estar semánticamente bien construído facilita la indexación de buscadores, la mantención o modificaciones y facilita el trabajo de otros sobre nuestro código.</p>
+                        
+                        </li>
+                        
+                        <li>
+                        
+                            <p><strong>Rápido punto de partida:</strong> Partir desde cero cada proyecto simplemente no es práctico. Las grillas o estructuras son parte integral del diseño, de la arquitectura, del arte y de muchas otras disciplinas. Tiene que ver con el equilibrio y la percepción y con el sano principio de automatizar los procesos que son repetitivos. </p>
+                        
+                        </li>
+                        
+                    </ul> 
+                    
+                    <h3>Referentes e inspiradores</h3>
+                    
+                    <p>Existen varisos sistemas de Grillas o Frameworks CSS que me sirvieron de enseñanza e inspiración para hacer mi propio sistema de acuerdo a mis necesidades, forma de trabajo y visión del diseño. Gracias a: 
+                    
+                    <a href="http://960.gs/">960 Grid System</a> | <a href="http://code.google.com/p/blueprintcss/"><strong>Blueprint</strong></a> | <a href="http://quiltro.cl/2007/11/11/origo-css/">Origo</a> | <a href="http://www.yaml.de/en/home.html">Yaml</a> | <a href="http://developer.yahoo.com/yui/grids/">YUI Yahoo Grid CSS</a></p>   
+                    
+                    <br />                 
+                    
+                    <h3>Información sobre Grillas CSS</h3>
+                    
+                    <ul>
+                        
+                        <li>&raquo; <a href="http://www.carlosleopoldo.com/post/importancia-del-diseno-con-grilla-grid-cuadricula-malla-o-rejilla/">Importancia del diseño con grilla</a></li>
+                        <li>&raquo; <a href="http://www.anieto2k.com/2008/08/07/¿cuando-usar-un-framework-css/">¿Cuando usar un framework CSS?</a></li>
+                        <li>&raquo; <a href="Los mejores frameworks CSS (y porqué no los uso)">Los mejores frameworks CSS (y porqué no los uso)</a></li>
+                        <li>&raquo; <a href="http://www.anieto2k.com/2008/03/29/12-frameworks-css-que-deberias-conocer/">12 frameworks CSS que deberías conocer</a></li>
+                        <li>&raquo; <a href="http://www.contentwithstyle.co.uk/content/a-css-framework">A CSS Framework</a></li>
+                        <li>&raquo; <a href="http://www.berriart.com/2007/08/10/blueprint-un-framework-css/">BluePrint, un framework CSS</a></li>
+                        <li>&raquo; <a href="http://www.smashingmagazine.com/2008/01/04/frameworks-round-up-when-to-use-how-to-choose/">Frameworks Round-Up: When To Use, How To Choose?</a></li>
+                        <li>&raquo; <a href="http://www.designbygrid.com">www.designbygrid.com</a></li>
+                        <li>&raquo; <a href="http://www.yukei.net/2007/10/yui-y-otros-frameworks-css/">YUI y otros Frameworks CSS</a></li>
+                        <li>&raquo; <a href="http://pixelco.us/blog/yaml-un-excelente-framework-css-y-uno-de-los-mas-completos/">YAML - Un excelente framework CSS y uno de los más completos</a></li>
+                    
+                    </ul>
+                
+                </div>
+                
+                
+            	<div class="col9 final">
+                
+                    <h1>Principio</h1>
+                    <blockquote>&quot;Una Grilla CSS debe ser fácil de entender, usar y modificar, económica en el uso del código y flexible para adaptarse a la mayor cantidad de necesidades de diagramación&quot;</blockquote>
+                    <p><span class="simple">S&#238;mple</span> se basa en columnas y no en la imitar de la estructura de las tablas, basada en filas y columnas. Básicamente <strong>se trata de eliminar el concepto de fila -que es el que contiene las columnas- y reemplazarlo por el elemento &quot;caja&quot;</strong> y darle a éste elemento propiedades más universales ya que <strong>&quot;caja&quot; será el único elemento contenedor,</strong> para grupos de columnas,  grupos de otros elementos html o de otros lenguajes de programación. Y sí, aunque no sea una actitud &quot;globalizada&quot;, ésta Grilla CSS privilegia el idioma español.</p>
+				
+	                <div class="caja ir">
+					
+	                    	<p class="boton">
+                            	<a href="codigoSimple/index.html">Ver demo <span class="simple">S&#238;mple </span></a> 
+								<a href="codigoSimple.zip">Descargar <span class="simple">S&#238;mple </span></a> 
+								<a href="simple+manual+ejemplos.zip">Descargar <span class="simple">S&#238;mple </span> + Manual + Ejemplos</a>
+							</p>                 
+	                    		                
+					</div>
+					
+                	<hr />
+                    
+                    <h1>¿Cómo funciona <span class="simple">S&#238;mple</span>?</h1>
+                  	<blockquote>&quot;Basado en 3 elementos clave: <strong>contenedor</strong>, <strong>caja</strong> y <strong>columa</strong>. El elemento <strong>&quot;contenedor&quot; (id)</strong> encierra todo y define el ancho del sitio, <strong>&quot;caja&quot; (clase)</strong> es el contenedor universal para definir las áreas o secciones de un sitio; y el ancho y ubicación de estas mismas se mide y determina en columnas llamadas &quot;colX&quot;, desde <strong>&quot;col1&quot;</strong> a <strong>&quot;col12&quot;</strong>.&quot;</blockquote>
+                    
+                  	<p>1024px es el ancho más usado actualmente en Internet. 960px es el ancho más versatil para las grillas ya que permite columnas con un ancho de 40 ó 60px cada una y, dependiendo de eso, el elemento &quot;contenedor&quot; puede ser dividido en 4, 8, 12, 16 (sí, múltiplos de 4) columnas. </p>
+                    
+                    <p><strong><span class="simple">S&#238;mple</span> VIENE CON LA SIGUIENTE CONFIGURACIÓN BÁSICA :</strong> <strong>La versión base de <span class="simple">S&#238;mple</span> está formado por un elemento &quot;contenedor&quot; con un padding left y padding right de 10px (<em><strong>Fig. 1: marcado en azul</strong></em>), 12 columnas de 60px cada una con una separación de 20px entre columnas gracias a un margin-left de 20px</strong>. Todas las columnas flotan a la izquierda posicionándose una junto a otra gracias a la propiedad float: left. Es importante considerar que el ancho total es la suma del ancho de las columnas más la separación entre ellas.</p>   
+                    
+					<p>Todas las columnas tienen un margin-left de 20px pero en el caso de la última columna éste margin-left de 20px no es necesario (<em><strong>Fig. 1: marcado en rojo</strong></em>). La solución es agregar una clase especial a la última columna, llamada <strong>"final"</strong> que lleva el margin-left a 0, sumada a la clase que define el ancho de la columna. </p>              
+                    
+<img src="imgs/simple1.gif" alt="Paso 1" />            
+                    
+					<p><strong>¿<span class="simple">S&#238;mple</span> PERMITE MODIFICAR EL ANCHO BASE, LA CANTIDAD DE COLUMNAS, ANCHO Y SEPARACIÓN ENTRE ELLAS?</strong><strong>.</strong>
+				    Sí, es posible modificar todo esto. Sólo hay que mantener coherencia con el espíritu de <span class="simple">S&#238;mple</span> y hacer ciertas matemáticas. La idea es que el ancho base sea divisible por la cantidad de columnas que se deseen y dé como resultado un un número entero (ojalá par); se debe considerar además la separación entre columnas como parte del ancho base. Esto se define en el archivo grilla.css</p> 
+                    
+                    <hr />                   
+                    
+					<h1>Ejemplo de aplicación</h1>
+                    
+                  	<h3>Paso 1</h3>
+                    
+                    <img src="imgs/simple2.gif" alt="Paso 1" />
+                    
+                    <div class="caja">
+                    
+						<div class="col3">
+                            
+                        	<p><span class="numeracion2">a/</span>La clase <strong>&quot;contenedor&quot; es la que define el ancho del sitio</strong> y contiene todos los otros elementos de la grilla.</p>
+                        
+               	  	  	</div> 
+                        
+                        <div class="col3">                        
+                            
+                        	<p><span class="numeracion2">b/</span>No hay trabajo de columnas en esta etapa. Primero <strong>creamos los contenedores básicos (divs) que corresponden a la división de un sitio estándar (cabeza, cuerpo y pié) y se les asigna la clase &quot;caja&quot;</strong>, así la estructura se configurará de acuerdo a la imagen de arriba.</p>                                
+                        
+					  	</div> 
+                        
+                        <div class="col3 final">
+                        
+                            <p><span class="numeracion2">c/</span> Las clases <strong>&quot;cabezal&quot;, &quot;cuerpo&quot; y &quot;pie&quot; </strong>no son parte de <span class="simple">S&#238;mple</span>, se aplican sólo para efectos del ejemplo en el div correspondiente, que ya tiene la clase <strong>caja</strong>, gracias al principio de <strong>Suma de clases</strong> y permiten aplicar estilos en forma específica.</p>                          
+                                                   
+                   	  	</div>   
+                                             
+                    </div>
+
+                    
+                    <h3>Paso 2</h3>
+                    
+                    <img src="imgs/simple3.gif" alt="Paso 2" /> 
+                       
+					<div class="caja">
+                    
+						<div class="col3">
+                            
+                            <p><span class="numeracion2">a/</span>El div <strong>&quot;caja cuerpo&quot;</strong> se subdividirá en<strong> 3 secciones: 1 sección central principal (la más ancha) y 2 secciones laterales (angostas)</strong>.</p>
+                        
+               	  	  	</div> 
+                        
+                        <div class="col3">                        
+                            
+                          <p><span class="numeracion2">b/</span>La sección central tendrá un ancho de 6 columnas (col6) y cada sección lateral tendrán un ancho de 3 columnas (3col): <br />
+                          <strong>3col + 6col + 3col = 12 columnas</strong></p>                                
+                        
+					  	</div> 
+                        
+                      <div class="col3 final">
+                        
+                        <p><span class="numeracion2">c/</span><strong>IMPORTANTE:</strong> Para evitar el margen derecho de 20 pixeles en la última sección (3col de la derecha) <strong>debemos sumar la clase &quot;final&quot; a &quot;col3&quot;</strong>. Si no lo hacemos, la última sección siempre quedará debajo de las otras 2 secciones.</p>                          
+                                                   
+               	  	  	</div>   
+                                             
+					</div>                                  
+                    
+            	</div>
+                
+          	</div> 
+    
+    
+            <div class="caja pie">
+            
+            	<div class="simple">
+                
+                	<h1>S&#238;mple</h1>
+                	<p>&#126; Grilla CSS &#126;</p>
+                    
+                </div>  
+                
+                <div class="caja">
+                
+                    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/cl/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.0/cl/88x31.png" /></a><a xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">Simple - Grilla CSS</a> creada por <a xmlns:cc="http://creativecommons.org/ns#" href="http://rgarcia.cl" property="cc:attributionName" rel="cc:attributionURL">Rodrigo Garc&#237;a Rejas</a> est&aacute; registrada bajo liencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/cl/">Creative Commons Atribuci&#243;n-No Comercial-Licenciar Igual 2.0 Chile License</a>. Permisos m&aacute;s all&aacute; del alcance de esta licencia pueden estar disponibles en <a xmlns:cc="http://creativecommons.org/ns#" href="http://creativecommons.org/licenses/by-nc-sa/2.0/cl/" rel="cc:morePermissions">http://creativecommons.org/licenses/by-nc-sa/2.0/cl/</a>.</p>
+                
+                </div> 
+                    
+            </div>
+    
+        </div>
+    
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

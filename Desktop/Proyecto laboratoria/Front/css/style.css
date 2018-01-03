@@ -1,0 +1,26 @@
+h1{
+	text-align:center; 
+    color:gray;
+    }
+    p{
+    	text-align: center;
+    }
+.fa{
+	font-size: 70px;
+	margin-left:30px;
+}
+.fa-telegram:hover{
+	color:red;
+	font-size: 100px;
+	cursor: pointer;
+}
+.fa-bicycle{
+	color:purple;
+	font-size: 100px;
+	cursor: pointer;
+} 
+.fa-fighter-jet{
+	color:blue;
+	font-size: 100px;
+	cursor: pointer;
+}

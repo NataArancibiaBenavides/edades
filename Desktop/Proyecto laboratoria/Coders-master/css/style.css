@@ -1,0 +1,41 @@
+div{
+	width: 380px;
+	height:260px;
+	color:#010101;
+	min-width: 0px;
+	font-size: small;
+	font-family: serif;
+	text-decoration: underline #040404;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.coder1{
+	background-image: url(../img/coder_1.jpg);
+	background-size: 250px;
+	
+}
+.coder2{
+	background-image: url(../img/coder_2.jpg);
+	background-size: 250px;
+}
+
+.coder3{
+	background-image: url(../img/coder_3.jpg);
+	background-size: 250px;
+}
+.coder4{
+	background-image: url(../img/coder_4.jpg);
+	background-size: 250px;
+	
+}
+
+.coder5{
+	background-image: url(../img/coder_5.jpg);
+	background-size: 250px;
+}
+.coder6{
+	background-image: url(../img/coder_6.jpg);
+	background-size: 250px;
+}
+

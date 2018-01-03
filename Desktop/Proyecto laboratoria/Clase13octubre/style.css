@@ -1,0 +1,35 @@
+.Primero {
+	color:red;
+}
+#winning{
+	color:blue;
+}
+h1#winning{
+	color:black;
+}
+.Contenedor{
+	color:pink;
+}
+/* al poner +p pasa el */
+.Contenedor1 p:first-of-type /* firts el primer tipo
++p {font-size:36px;
+	
+}
+	.Box-one{
+	width: 100px;
+	height: 100px;
+	background-color:pink;
+	padding: 20px 10px 15px 5px;	/* como las manecillas del reloj*/
+    border: 5px solid red;
+    margin-bottom: 5 px; 
+    display: inline-block;
+}
+
+	.Box-two{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	padding: 20px 10px 15px 5px;
+	display: inline-block;
+
+}

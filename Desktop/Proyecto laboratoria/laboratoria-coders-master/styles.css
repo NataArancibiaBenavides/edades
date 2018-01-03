@@ -1,0 +1,45 @@
+h1 {
+    font-family: 'Sanchez', serif;
+    font-size: 30px;
+}
+
+hr {
+    margin-left: 0px;
+    width: 130px;
+    height: 5px;
+    color: black;
+    background: black;
+    margin-top: -10px;
+}
+
+div.coder {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 10px;
+    background-color: black;
+}
+
+div.coder img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    min-width: 250px;
+    max-height: 100%;
+    position: relative;
+    opacity: 0.5;
+}
+
+div.coder img:hover {
+    opacity: 1;
+}
+
+div.coder p {
+    position: relative;
+    bottom: 50px;
+    color: white;
+    text-align: right;
+    font-family: 'Sanchez', serif;
+    font-size: 20px;
+    margin-right: 10px;
+}
